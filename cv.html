@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanik</title>
+    <link rel="icon" type="images/x-icon" href="https://us.123rf.com/450wm/yupiramos/yupiramos1608/yupiramos160809861/61148333-samoch%C3%B3d-z-boku-pojazdu-auto-ikon-transportu-nowoczesne-grafiki-wektorowej-i-p%C5%82askie-izolowane.jpg?ver=6" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <script src="../script/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV</title>
+ <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bai Jamjuree;
+}
+
+:root {
+  --clr: #222327;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--clr);
+}
+body nav {
+  width: 100%;
+  height: 70px;
+  background:rgb(128, 128, 128);
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body nav ul {
+  display: flex;
+  width: 350px;
+}
+body nav ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+body nav ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+body nav ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color:  #76102e;
+}
+body nav ul li a .text {
+  position: absolute;
+  color:  #76102e;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  top: 0;
+  transform: translateY(20px);
+}
+
+body nav ul li.active a .icon {
+  transform: translateY(32px);
+}
+body nav ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+body nav ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(0px);
+}
+body nav ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(70px);
+}
+body nav ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(140px);
+}
+body nav ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(210px);
+}
+body nav ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(280px);
+}
+body nav .indicator {
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  background: #f47b20;
+  border-radius: 50%;
+  border: 6px solid var(--clr);
+  transition: 0.3s;
+}
+
+
+.logo{
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.logo img{
+  width: 40%;
+}
+
+.linki{
+  width: 100%;
+}
+
+.samochodlogo{
+  width: 100%;
+  height: 400px;
+  background-image: url(sam.png);
+  background-repeat: no-repeat;
+  background-position: 50% -10% ;
+  background-color:  #76102e;
+  display:flex ;
+  justify-content: center;
+  background-size: contain;
+  
+}
+
+.sm{
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  top: 3px;
+  left: 10px;
+}
+.tt{
+  font-size: 30px;
+  margin: 5px;
+}
+.fb{
+  font-size: 30px;
+  margin: 5px;
+}
+.ig{
+  font-size: 30px;
+  margin: 5px;
+}
+.sm a:visited{
+color:#76102e;
+}
+.sm a{
+  color: #76102e;
+}
+.batton{
+  width: 180px;
+  height: 90px;
+  background-color: #76102e;
+  border-radius: 10px;
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  align-items: center;
+  color: aliceblue;
+  font-weight: bolder;
+  border: 5px solid #f47b20;
+  margin-top: 150px;
+
+
+}
+
+.batton:hover{
+  width: 200px;
+  height: 110px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  box-shadow: 0px 3px 20px 5px black;
+  font-weight: bolder;
+}
+.radomtext{
+  color: aliceblue;
+  text-align: center;
+  margin: auto;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.text1{
+    background-color: rgba(128, 128, 128, 0.411);
+    width: 400px;
+    height: 175px;
+    margin-top: 175px;
+    position: absolute;
+    color: black;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.text1:hover{
+background-color: white;
+}
+
+.image-menu{
+    background-image: url(kolazebate.jpg) !important;
+    width: 400px;
+    height: 350px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5px;
+    margin-left: 170px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.text2{
+    background-color:  rgba(128, 128, 128, 0.411);
+    width: 400px;
+    height: 175px;
+    margin-top: 175px;
+    position: absolute;
+    color: black;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+
+.text2:hover{
+    background-color: white;
+}
+
+    
+    
+    .text3{
+    background-color:  rgba(128, 128, 128, 0.411);
+    width: 400px;
+    height: 175px;
+    margin-top: 175px;
+    position: absolute;
+    color: black;
+    text-align: center;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+.text3:hover{
+    background-color: white;
+}
+
+.moretext{
+  color: aliceblue;
+  text-align: center;
+  margin: auto;
+  font-style: italic;
+}
+.sekcjaformularz{
+  width: 100%;
+  height: 150px;
+  background-color: #f47b20;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.formularz{
+  margin-left: 550px;
+  margin-bottom: 300px;
+  padding-top: 60px;
+  border-color: #222327;
+  margin-left: 25%;
+}
+
+.zdjparalaxa{
+  width: 100%;
+  height: 600px;
+  background-image: url(https://d-art.ppstatic.pl/kadry/k/r/1/19/75/62a9af5f78dd2_o_full.jpg);
+  margin-top: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider{
+  width: 500px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #f47b20;
+  margin: 30px;
+  border-radius: 10px;
+}
+.slides{
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+#slide-1{
+  width: 500px;
+  height: 300px;
+  background-image:url(https://thumbs.dreamstime.com/b/graficzna-ilustracja-wektorowa-elektryka-elektryk-%C5%9Bpieszy-si%C4%99-z-przybornikiem-i-kluczem-do-naprawy-indywidualnie-na-bia%C5%82ym-tle-204378920.jpg);
+}
+#slide-2{
+  width: 500px;
+  height: 300px;
+  background-image:url(https://th.bing.com/th/id/R.9ca62d8e8b8cf9e47c79883b76883a57?rik=PRjx2lERiiJkoA&riu=http%3a%2f%2fgetdrawings.com%2fimg%2fsilhouette-school-children-34.jpg&ehk=ZSpZv1m9hdRHea3IjHb0Y4Sfaeq75tFs79SgdkdqWPA%3d&risl=&pid=ImgRaw&r=0);
+}
+#slide-3{
+  width: 500px;
+  height: 300px;
+  background-image:url(https://th.bing.com/th/id/R.9ca62d8e8b8cf9e47c79883b76883a57?rik=PRjx2lERiiJkoA&riu=http%3a%2f%2fgetdrawings.com%2fimg%2fsilhouette-school-children-34.jpg&ehk=ZSpZv1m9hdRHea3IjHb0Y4Sfaeq75tFs79SgdkdqWPA%3d&risl=&pid=ImgRaw&r=0);
+}
+#slide-4{
+  width: 500px;
+  height: 300px;
+  background-image:url(https://th.bing.com/th/id/R.9ca62d8e8b8cf9e47c79883b76883a57?rik=PRjx2lERiiJkoA&riu=http%3a%2f%2fgetdrawings.com%2fimg%2fsilhouette-school-children-34.jpg&ehk=ZSpZv1m9hdRHea3IjHb0Y4Sfaeq75tFs79SgdkdqWPA%3d&risl=&pid=ImgRaw&r=0);
+}
+.slides::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb{
+  background: #666;
+}
+.slides::-webkit-scrollbar-track{
+  background: transparent;
+}
+.slides > div{
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 500px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: white;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slider > a{
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active{
+  color: #f47b20;
+}
+.slider > a{
+  color: black;
+}
+.slider > a:focus{
+  background: #eee;
+}
+.obr1{
+  width: 1280px;
+  height: 310px;
+  top: -340px;
+  left: 550px;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer !important;
+  background-size:50%;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://img.freepik.com/darmowe-wektory/auto-mechanik-naprawy-silnika-pojazdu-na-bialym-tle-ilustracji-wektorowych-plaski-kreskowka-mezczyzna-naprawiajacy-lub-sprawdzajacy-samochod-z-otwarta-maska-w-garazu_74855-8227.jpg?w=2000);
+}
+.miniatury{
+  width: 1280px;
+  height: 718px;
+  top: -317px;
+  left: 580px;
+  border-radius: 10px;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  cursor: pointer;
+}
+#minia1{
+  width: 620px;
+  height: 349px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+  background-image: url(https://motodoradca.com/wp-content/uploads/2020/10/Dobry-mechanik-samochodowy-%E2%80%93-jak-go-znalezc-wybor-portal-wiedzy-o-motoryzacji-motodoradca.com_.jpg);
+}
+
+#minia1:hover{
+  width: 620px;
+  height: 349px;
+  box-shadow: 0px 2px 19px 4px rgba(0,0,0,0.65);
+  scale: 1.05;
+}
+#minia1:hover #minia1txt{
+  background-color: rgba(0, 0, 0);
+}
+#minia1txt{
+  width: 620px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  padding-top: 4px;
+  margin-top: 219.1px;
+  border-radius: 9px;
+  transition: 1s;
+}
+#minia2{
+  width: 620px;
+  height: 349px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+  background-image: url(https://img.freepik.com/darmowe-zdjecie/umiesniony-pracownik-serwisu-samochodowego-naprawy-pojazdu_146671-19605.jpg?w=2000);
+}
+#minia2:hover{
+  width: 620px;
+  height: 349px;
+  box-shadow: 0px 2px 19px 4px rgba(0,0,0,0.65);
+  scale: 1.05;
+}
+#minia2:hover #minia2txt{
+  background-color: rgba(0, 0, 0);
+}
+#minia2txt{
+  width: 620px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  padding-top: 4px;
+  margin-top: 219.1px;
+  border-radius: 9px;
+  transition: 1s;
+}
+#minia3{
+  width: 620px;
+  height: 349px;
+  margin-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: url(https://www.aplikuj.pl/media/article/2020/05/158894251271400400.webp);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+#minia3:hover{
+  width: 620px;
+  height: 349px;
+  box-shadow: 0px 2px 19px 4px rgba(0,0,0,0.65);
+  scale: 1.05;
+}
+#minia3:hover #minia3txt{
+  background-color: rgba(0, 0, 0);
+}
+#minia3txt{
+  width: 620px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  padding-top: 4px;
+  margin-top: 219.1px;
+  border-radius: 9px;
+  transition: 1s;
+}
+#minia4{
+  width: 620px;
+  height: 349px;
+  margin-left: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://sprcms2.blob.core.windows.net/guidearticles/thumbnails/2955/mechanik-samochod-praca-warsztat.jpeg);
+  transition: 1s;
+}
+#minia4:hover{
+  width: 620px;
+  height: 349px;
+  box-shadow: 0px 2px 19px 4px rgba(0,0,0,0.65);
+  scale: 1.05;
+}
+#minia4:hover #minia4txt{
+  background-color: rgba(0, 0, 0);
+}
+#minia4txt{
+  width: 620px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  padding-top: 4px;
+  margin-top: 219.1px;
+  border-radius: 9px;
+  transition: 1s;
+}
+.sidebar{
+  background-color: #f47b20;
+  width: 500px;
+  height: 710px;
+  left: 30px;
+  
+  top: -1030px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.ulside{
+  position: relative;
+  transform: skewY(-15deg);
+  scale: 1.5;
+}
+.ulside .liside{
+  position: relative;
+  list-style: none;
+  width: 200px;
+  background-color: gray;
+  padding: 15px;
+  z-index: var(--i);
+  transition: 0.5s;
+}
+.ulside .liside:hover{
+  background: #76102e;
+  transform: translateX(-50px);
+}
+.ulside .liside::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: gray;
+  transform-origin: right;
+  transform: skewY(45deg);
+  transition: 0.5s;
+}
+.ulside .liside:hover::before{
+  background: #76102e;
+}
+.ulside .liside:hover::after{
+  background: #76102e;
+}
+.ulside .liside::after{
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: gray;
+  transform-origin: bottom;
+  transform: skewX(45deg);
+  transition: 0.5s;
+}
+.ulside .lide .aside{
+  text-decoration: none;
+  color: #999;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.ulside a{
+  text-decoration: none;
+  color: inherit;
+}
+.ulside .liside:hover .aside{
+  color: #fff;
+}
+.stopka{
+  width: 100%;
+  height: 150px;
+  background-color:#76102e;
+  margin-top: 00px;
+}
+.przyciski{
+  width:80%;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: auto;
+  font-weight: bolder;
+}
+.przyciski a:visited{
+  color: white;
+  }
+.przyciski a{
+  color: white;
+  text-decoration:none
+}
+#home{
+  margin: 20px;
+  cursor: pointer;
+  color: white;
+}
+#onas{
+  margin: 20px;
+  cursor: pointer;
+}
+#oferta{
+  margin: 20px;
+  cursor: pointer;
+}
+#blog{
+  margin: 20px;
+  cursor: pointer;
+}
+#kontakt{
+  margin: 20px;
+  cursor: pointer;
+}
+#copyright{
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-left: 43%;
+  margin-top: -10px;
+}   
+.gallery {
+  position: relative;
+  width: 26%;
+  height: 310px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 3 0px;
+}
+.everything-photo-left-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+  height: 100%;
+  animation: gallery-slide 15s infinite alternate;
+}
+.everything-photo-left-slider img {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+@keyframes gallery-slide {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+
+.submit{
+ width: 20%;
+ height: 10%;
+ 
+}
+.submit:hover{
+  opacity: 80%;
+  box-shadow: 3px 1px 10px 5px whitesmoke;
+}
+.wheely{
+  position: relative;
+}
+.wheel, .wheel2 {
+animation: spin 4s linear infinite;
+ scale: 0.10;
+ position: absolute;
+ top: 20px;
+
+}
+.wheel{
+  left: -383px;
+  top: -15px;
+  scale: 0.09;
+}
+.wheel2{
+  left: -151px;
+  top: -15px;
+  scale: 0.10;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#div {text-align:center; width:100%; height:350px; padding-top:20px;}
+
+.samochodK{
+  width: 100%;
+  height: 350px;
+  background-image: url(laweta.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% -10% ;
+  background-color:  #76102e;
+  display:flex ;
+  justify-content: center;
+  background-size: contain;
+  margin-top: 30px;
+  
+}
+
+.napis{
+  background:var(--clr);
+color:#f47b20;
+margin-bottom: -50px;
+font-size: 100px;
+text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background: var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background:#f47b20;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0,0,0,0.1);
+    border-left: 50px solid #f47b20;
+    border-right: 50px solid #f47b20;
+}
+.container .top
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.container .top .imgBx
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .top .imgBx .box
+{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.container .top .imgBx .box img
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .top .profileText
+{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+.container .top .profileText h3
+{
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: #333;
+}
+.container .top .profileText h3 span
+{
+    position: relative;
+    font-size: 0.5em;
+    font-weight: 300;
+    top: -10px;
+}
+.container{
+    
+    margin-left: 450px;
+}
+.container .contentBox
+{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+.container .contentBox h3
+{
+    border-left: 4px solid #76102e;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.container .contentBox ul
+{
+    position: relative;
+}
+.container .contentBox ul li
+{
+    list-style: none;
+    margin: 25px 0;
+    line-height: 1em;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+}
+.container .contentBox ul li ion-icon
+{
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #76102e;
+}
+.container .contentBox ul.education li
+{
+    flex-direction: column;
+    margin: 25px;
+}
+h5
+{
+    color:#76102e
+}
+h4
+{
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+}
+h6
+{
+    color: #666;
+    font-weight: 300;
+    font-size: 1em;
+}
+.language li
+{
+    flex-direction: column;
+}
+.language li span
+{
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+.language .percent
+{
+    position: relative;
+    width: 100%;
+    background: #e3e3e3;
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+}
+.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #76102e;
+}
+.container .contentBox ul.interest
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container .contentBox ul.interest li
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.container .contentBox ul.interest li .icon
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #76102e;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contentBox ul.interest li .icon ion-icon
+{
+    color: #fff;
+    margin-right: 0;
+}
+p
+{
+    font-style: 300;
+}
+.rightSide
+{
+    padding-left: 40px;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company
+{
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+.about .box .year_company h5
+{
+    color: #333;
+    font-weight: 600;
+}
+.about .box .year_company h5:nth-child(1)
+{
+    color: #76102e;
+}
+.about .box .text h4
+{
+    color: #76102e;
+    font-weight: 16px;
+    margin: 0;
+}
+.about.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about.skills .box h4
+{
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.about.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #e3e3e3;
+}
+.about.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #76102e;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="linki">
+      
+  
+        <nav>
+          <div class="sm">
+            <div class="tt"><a href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></a></ion-icon></a></div>
+            <span class="fb"><a href="https://facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></span>
+            <span class="ig"><a href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></span>
+          </div>
+          </ul>
+    
+            <ul>
+              <li class="list">
+                <a href="index.html">
+                  <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                  </span>
+                  <span class="text">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="Rejestracja.html">
+                  <span class="icon">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                  </span>
+                  <span class="text">Rejestracja</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="cennik.html">
+                  <span class="icon"
+                    ><ion-icon name="cash-outline"></ion-icon
+                  ></span>
+                  <span class="text">Cennik</span>
+                </a>
+              </li>
+              <li class="list ">
+                <a href="Nasi pracownicy.html">
+                  <span class="icon"
+                    ><ion-icon name="car-outline"></ion-icon
+                  ></span>
+                  <span class="text">pracownicy</span>
+                </a>
+              </li>
+              <li class="list active">
+                <a href="cv.html">
+                  <span class="icon"
+                    ><ion-icon name="accessibility-outline"></ion-icon
+                  ></span>
+                  <span class="text">CV</span>
+                </a>
+              </li>
+              <div class="indicator"></div>
+            </ul>
+          </nav>
+          <div class="container">
+            <div class="top">
+                <div class="imgBx">
+                    <div class="box">
+                        <img src="koszula1..jpg">
+                    </div>
+                </div>
+                <div class="profileText">
+                   <h3>Szymon<br>Petrow<br><span>Mechanik samochodowy</span></h3> 
+            </div>
+        </div>
+        <div class="contentBox">
+            <div class="leftSide">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                        <span class="text">+48 616 138 342</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <span class="text">szymonpetrow@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="earth-outline"></ion-icon></span>
+                        <span class="text">www..com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="earth-outline"></ion-icon></span>
+                        <span class="text">Kraków, Polska</span>
+                    </li>
+                </ul>
+                <h3>Wykształcenie</h3>
+                <ul class="education">
+                    <li>
+                        <h5>1999 - 2004</h5>
+                        <h4>Wykształcenie wyższe</h4>
+                        <h6>Akademia Górniczo Hutnicza</h6>
+                    </li>
+                    <li>
+                        <h5>1995 - 1999</h5>
+                        <h4>Wykształcenie średnie</h4>
+                        <h6>VIII LO w Krakowie</h6>
+                    </li>
+                    <li>
+                        <h5>1994 - 1999</h5>
+                        <h4>Wykształcenie podstawowe</h4>
+                        <h6>SP nr4 w Krakowie</h6>
+                    </li>
+                </ul>
+                <h3>Języki</h3>
+                <ul class="language">
+                    <li>
+                        <span class="text">Polski</span>
+                        <span class="percent">
+                            <div style="width: 100%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Angielski</span>
+                        <span class="percent">
+                            <div style="width: 90%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Niemiecki</span>
+                        <span class="percent">
+                            <div style="width: 80%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Hiszpański</span>
+                        <span class="percent">
+                            <div style="width: 20%;"></div>
+                        </span>
+                    </li>
+                </ul>
+                <h3>Zainteresowania</h3>
+                <ul class="interest">
+                    <li><span class="icon"><ion-icon name="musical-notes-outline"></ion-icon></span>Muzyka</li>
+                    <li><span class="icon"><ion-icon name="book-outline"></ion-icon></span>Czytanie</li>
+                    <li><span class="icon"><ion-icon name="airplane-outline"></ion-icon></span>Żona kolegi<hr></li>
+                    <li><span class="icon"><ion-icon name="language-outline"></ion-icon></span>Gotowanie</li>
+                </ul>
+            </div>
+
+            <div class="rightSide">
+                <div class="about">
+                    <h3>Profil</h3>
+                    <p>
+                      Jako mechanik samochodowy oferuję swoim klientom kompleksowe usługi związane z utrzymaniem i naprawą ich samochodów. Oto kilka rzeczy, które mogę zaoferować: <br><br>
+                        • Diagnostykę i naprawę różnych elementów samochodu, w tym silnika, układów hamulcowych, układu kierowniczego, układu chłodzenia i innych.<br>
+                        • Przeglądy techniczne, wymiany oleju, filtrów i innych części, aby zapewnić, że samochód działa sprawnie i bezpiecznie.<br>
+                        • Doradztwo w wyborze najlepszych części zamiennych i materiałów eksploatacyjnych dla danego modelu samochodu. <br>
+                        • Montaż nowych urządzeń, takich jak systemy nawigacji GPS, kamery cofania, systemy audio itp. <br>
+                        • Obsługę i naprawę systemów elektrycznych i elektronicznych samochodu, takich jak oświetlenie, instalacje audio itp. <br>
+                        • Szybką i skuteczną pomoc w przypadku awarii, a także holowanie uszkodzonego samochodu do warsztatu. <br>
+                    </p>
+                </div>
+
+            <div class="about">
+                <h3>Doświadczenie</h3>
+                <div class="box">
+                    <div class="year_company">
+                    <h5>2005 - 2008</h5>
+                    <h5>Stażysta</h5>
+                </div>
+                <div class="text">
+                    <h4>Pomocnik</h4>
+                    <p>Pomoc w diagnostyce i naprawach samochodów</p>
+                </div>
+            </div>
+                <div class="box">
+                    <div class="year_company">
+                    <h5>2008 - 2013</h5>
+                    <h5>Auto serwis</h5>
+                </div>
+                <div class="text">
+                    <h4>Pomocnik</h4>
+                    <p>Diagnostyka i naprawa silników, układów napędowych, układów hamulcowych i innych elementów samochodowych</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="year_company">
+                <h5>2015 - dalej</h5>
+                <h5>CarMechanik</h5>
+            </div>
+            <div class="text">
+                <h4>Właściciel</h4>
+                <p>Jestem właścicielem warsztatu samochodowego</p>
+            </div>
+        </div>
+            </div>
+            <div class="about skills">
+                <h3>Umiejętności</h3>
+                <div class="box">
+                    <h4>Fl Studio</h4>
+                    <span class="percent">
+                        <div style="width: 100%;"></div>
+                    </span>
+                </div>
+                <div class="box">
+                    <h4>Certyfikat Diagnosty Mechanik (2018) </h4>
+                    <span class="percent">
+                        <div style="width: 100%;"></div>
+                    </span>
+                </div>
+                <div class="box">
+                    <h4>Zdolność do pracy w zespole i obsługi klienta</h4>
+                    <span class="percent">
+                        <div style="width: 95%;"></div>
+                    </span>
+                </div>
+                <div class="box">
+                    <h4>Umiejętność diagnozowania i naprawiania problemów technicznych</h4>
+                    <span class="percent">
+                        <div style="width: 100%;"></div>
+                    </span>
+                </div>
+                <div class="box">
+                    <h4>Umiejętność obsługi urządzeń i narzędzi warsztatowych</h4>
+                    <span class="percent">
+                        <div style="width: 100%;"></div>
+                    </span>
+                </div>
+                <div class="box">
+                    <h4>Znajomość zasad działania silników</h4>
+                    <span class="percent">
+                        <div style="width: 100%;"></div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+    <div class="stopka">
+      <div class="przyciski">
+        <div id="home"><a href="index.html">Home</a></div>
+        <div id="oferta"><a href="Rejestracja.html" >Rejestracja</a></div>
+        <div id="blog"><a href="cennik.html" >Cennik</a></div>
+        <div id="kontakt"><a href="Nasi pracownicy.html" >Dojazd do klienta</a></div>
+        <div id="kontakt"><a href="cv.html" >CV</a></div>
+      </div>
+      <div id="copyright"> COPYRIGHT | SZYMON PETROW© 2023</div>
+    </div>
+</body>
+</html>
